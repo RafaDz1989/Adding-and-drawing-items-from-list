@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Losowanie wybranego elementu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/490b7d187e.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-mode="light">
+    <div class="wrapper">
+        <div class="darkmode-box">
+            <button class="btn-icon"><i class="darkmode-icon fa-solid fa-moon"></i></button>
+        </div>
+        <div class="typing-box">
+            <h1 class="typing-text">Wpisz, co chcesz wylosować</h1>
+        </div>
+        <div class="adding-box">
+            <div class="adding-element-box">
+                <input class="adding-element-input" type="text" placeholder="Wpisz nazwę">
+                <button class="adding-element-btn">Zatwierdź</button>
+            </div>
+            <p class="warning-text">Brak elementów do wylosowania</p>
+        </div>
+        <div class="element-list">
+            <h3>Lista elementów:</h3>
+            <ul>
+                <!-- <li id="element1">
+                    Chelsea
+                    <div class="tools">
+                        <button class="edit">EDYTUJ</button><button class="delete"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </li>
+                <li id="element2">
+                    Barcelona
+                    <div class="tools">
+                        <button class="edit">EDYTUJ</button><button class="delete"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </li>
+                <li id="element3">
+                    Manchester United
+                    <div class="tools">
+                        <button class="edit">EDYTUJ</button><button class="delete"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div class="draw-box">
+            <button class="draw-btn">Losuj</button>
+            <p class="draw-score"></p>
+        </div>
+    </div>
+    <div class="popup">
+        <h3>Edytuj losowany element</h3>
+        <div class="popup-box">
+            <p class="popup-info"></p>
+            <input type="text" class="popup-input" placeholder="Wprowadź nową nazwę elementu">
+            <button class="popup-btn accept">Zatwierdź</button>
+            <button class="popup-btn cancel">Anuluj</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
